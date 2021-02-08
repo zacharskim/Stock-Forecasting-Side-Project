@@ -62,3 +62,5 @@ fin_viz_scraper(url = "https://finviz.com/screener.ashx?v=111&s=ta_toplosers")
 fin_viz_scraper(url = "https://finviz.com/screener.ashx?v=111&s=ta_unusualvolume")
 
 
+##check the datasets for any repeats to account for days when the market is closed and the scraper still runs
+
