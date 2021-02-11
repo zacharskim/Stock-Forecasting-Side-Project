@@ -46,12 +46,15 @@ fin_viz_scraper <- function(url){
   } else {
     
     old_data <- old_data[,-1]
+    output$Date <- Sys.Date()
     colnames(old_data) <- colnames(output)
+    new_data <- rbind(old_data, output)
+    
     
   }
   
   
-  write.csv(new_data, paste("C:\\Users\\matth\\OneDrive\\Desktop\\StockData\\", name[[1]][2], Sys.Date(), '.csv', sep = ''))
+  write.csv(new_data, paste("C:\\Users\\matth\\OneDrive\\Desktop\\StockData\\", name[[1]][2], '.csv', sep = ''))
 }
 
 
@@ -63,4 +66,6 @@ fin_viz_scraper(url = "https://finviz.com/screener.ashx?v=111&s=ta_unusualvolume
 
 
 ##check the datasets for any repeats to account for days when the market is closed and the scraper still runs
+
+
 
