@@ -51,7 +51,7 @@ fin_viz_scraper <- function(url){
   }
   
   
-  write.csv(new_data, paste("C:\\Users\\matth\\OneDrive\\Desktop\\StockData\\", name[[1]][2], '.csv', sep = ''))
+  write.csv(new_data, paste("C:\\Users\\matth\\OneDrive\\Desktop\\StockData\\", name[[1]][2], Sys.Date(), '.csv', sep = ''))
 }
 
 
