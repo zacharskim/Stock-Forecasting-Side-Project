@@ -54,9 +54,8 @@ fin_viz_scraper <- function(url){
   }
   
   
-  write.csv(new_data, paste("C:\\Users\\matth\\OneDrive\\Desktop\\StockData\\", name[[1]][2], '.csv', sep = ''))
+  write.csv(new_data, paste("C:\\Users\\matth\\OneDrive\\Desktop\\Stock-Forecasting-Side-Project\\", name[[1]][2], '.csv', sep = ''))
 }
-
 
 #Scraping 40 most volatile stocks, top gainers, top losers, and unusual volume stocks for any given day...
 fin_viz_scraper(url = "https://finviz.com/screener.ashx?v=111&s=ta_mostvolatile")
